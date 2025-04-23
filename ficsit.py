@@ -114,3 +114,4 @@ class FicsitPipelineIO:
 	def RenameMergedFile(self):
 		file = self.LeftMergeFile()
 		os.rename(file, 'sorted_file.bin')
+		os.remove('right.bin')
