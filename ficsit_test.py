@@ -14,8 +14,5 @@ def main():
 		if io.ReadyMerge():
 			merged_file = merger.Merge(io.LeftMergeFile(), io.RightMergeFile())
 			io.SetMergedFile(merged_file)
-	
-	# TODO
-	# io.SaveResultFile() # Сохранит результат в output.bin
-
+	io.RenameMergedFile()
 main()
